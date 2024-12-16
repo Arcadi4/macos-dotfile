@@ -1,1 +1,17 @@
-*
+/*
+DS_Store
+!.gitignore
+
+# ZSH files
+!.zshrc
+!.zplug
+.zplug/*
+!.zplug/packages.zsh
+!.VTuberMacOS.png
+
+# Config files
+!.config
+.config/*
+!.config/htop
+!.config/fastfetch
+!.config/neofetch
