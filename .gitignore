@@ -16,3 +16,8 @@ DS_Store
 !.config/htop
 !.config/fastfetch
 !.config/neofetch
+!Library
+Library/*
+!Library/Preferences
+Library/Preferences/*
+!Library/Preferences/com.googlecode.iterm2.plist
