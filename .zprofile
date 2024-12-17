@@ -10,12 +10,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="passion" # set by `omz`
 
-# Homebrew setups
-eval $(/opt/homebrew/bin/brew shellenv)
-
-# Zoxide setup
-eval "$(zoxide init zsh)"
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -81,11 +75,6 @@ plugins=(
     zsh-syntax-highlighting
     iterm2 fzf zoxide zsh-interactive-cd zsh-navigation-tools brew github gitignore git-auto-fetch git-commit npm nmap node deno yarn tig mongocli pip pipenv nodenv emoji copyfile copypath ubuntu safe-paste thefuck themes macos tmux ssh ssh-agent colorize colored-man-pages sudo)
 
-# brew command auto complete, must be done before 'source $ZSH/oh-my-zsh.sh'
-FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -115,3 +104,23 @@ export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bot
 export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
 export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
 export HOMEBREW_PIP_INDEX_URL="https://pypi.tuna.tsinghua.edu.cn/simple"
+
+# pnpm
+export PNPM_HOME="/Users/skylar/Library/pnpm"
+case ":$PATH:" in
+*":$PNPM_HOME:"*) ;;
+*) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
+# bun completions
+[ -s "/Users/skylar/.bun/_bun" ] && source "/Users/skylar/.bun/_bun"
+
+# ruby
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# tinytex
+export PATH=$PATH:/Users/skylar/Library/TinyTeX/bin/universal-darwin

@@ -1,4 +1,16 @@
-# omz plugin
+# Homebrew setups
+eval $(/opt/homebrew/bin/brew shellenv)
+
+# Zoxide setup
+eval "$(zoxide init zsh)"
+
+# thefuck setup
+eval $(thefuck --alias)
+
+# brew command auto complete, must be done before 'source $ZSH/oh-my-zsh.sh'
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+# omz setup
 source $ZSH/oh-my-zsh.sh
 
 # shell prompt: alien
@@ -19,22 +31,6 @@ export ALIEN_SECTIONS_LEFT=(
 
 export ALIEN_SECTION_TIME_FORMAT=%H:%M:%S
 export ALIEN_THEME="gruvbox"
-export ALIEN_GIT_MOD_SYM=*
-
-# applications and quick commands
-alias hmcl='java -jar ~/Minecraft/HMCL.jar'
-alias clear='echo; clear; fastfetch'
-alias bingwp='~/Files/Dev/bingwp/dist/bingwp'
-
-# default arguments
-alias rm='rm -iv'
-alias mv='mv -iv'
-alias cp='cp -iv'
-alias dust='dust -r'
-
-if [[ "$TERM_PROGRAM" != "iTerm.app" ]]; then
-    alias fastfetch='fastfetch --logo default'
-fi
 
 export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview='
 if [[ -f '{}' ]]; then
@@ -46,7 +42,7 @@ else
 fi
 '"
 
-# command replacements
+# Command replacements
 alias python='python3'
 alias pip='pip3'
 alias top='htop'
@@ -55,8 +51,20 @@ alias df='duf'
 alias du='dust'
 alias vim='nvim'
 
-# thefuck setup
-eval $(thefuck --alias)
+# Quick commands
+alias hmcl='java -jar ~/Minecraft/HMCL.jar'
+alias clear='echo; clear; fastfetch'
+alias bingwp='~/Files/Developer/bingwp/dist/bingwp'
+
+# Default flags
+alias rm='rm -iv'
+alias mv='mv -iv'
+alias cp='cp -iv'
+alias dust='dust -r'
+
+if [[ "$TERM_PROGRAM" != "iTerm.app" ]]; then
+    alias fastfetch='fastfetch --logo default'
+fi
 
 # functions
 function cleanbrew() {
@@ -79,8 +87,8 @@ function loop() {
         return 1
     fi
 
-    if [ -z $1 ]; then
-        1="1s"
+    if [ -z $2 ]; then
+        2=1
     fi
 
     while true; do
@@ -88,31 +96,5 @@ function loop() {
         sleep $2
     done
 }
-
-# console ninja
-PATH=~/.console-ninja/.bin:$PATH
-
-# pnpm
-export PNPM_HOME="/Users/skylar/Library/pnpm"
-case ":$PATH:" in
-*":$PNPM_HOME:"*) ;;
-*) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-
-# bun completions
-[ -s "/Users/skylar/.bun/_bun" ] && source "/Users/skylar/.bun/_bun"
-
-# ruby
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# user installations
-export PATH=~/bin:$PATH
-
-# tinytex
-export PATH=$PATH:/Users/skylar/Library/TinyTeX/bin/universal-darwin
 
 clear
