@@ -70,10 +70,7 @@ ZSH_THEME="passion" # set by `omz`
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-    git
-    zsh-syntax-highlighting
-    iterm2 fzf zoxide zsh-interactive-cd zsh-navigation-tools brew github gitignore git-auto-fetch git-commit npm nmap node deno yarn tig mongocli pip pipenv nodenv emoji copyfile copypath ubuntu safe-paste thefuck themes macos tmux ssh ssh-agent colorize colored-man-pages sudo)
+plugins=()
 
 # User configuration
 

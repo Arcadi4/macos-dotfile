@@ -10,6 +10,7 @@
 .zplug/*
 !.zplug/packages.zsh
 !.VTuberMacOS.png
+!.hushlogin
 
 # Config files
 !.config

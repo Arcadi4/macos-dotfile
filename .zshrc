@@ -1,6 +1,23 @@
 # Homebrew setups
 eval $(/opt/homebrew/bin/brew shellenv)
 
+# fastfetch
+alias fastfetch='fastfetch --processing-timeout 50 --weather-timeout 500'
+
+if [[ "$TERM_PROGRAM" != "iTerm.app" ]]; then
+    alias fastfetch='fastfetch --logo default'
+fi
+
+clear
+fastfetch
+
+# omz plugins
+plugins=(
+    git
+    zsh-syntax-highlighting
+    iterm2 fzf zoxide zsh-interactive-cd zsh-navigation-tools brew github gitignore git-auto-fetch git-commit npm nmap node deno yarn tig mongocli pip pipenv nodenv emoji copyfile copypath ubuntu safe-paste thefuck themes 
+    macos tmux ssh ssh-agent colorize colored-man-pages sudo)
+
 # Zoxide setup
 eval "$(zoxide init zsh)"
 
@@ -32,16 +49,6 @@ export ALIEN_SECTIONS_LEFT=(
 export ALIEN_SECTION_TIME_FORMAT=%H:%M:%S
 export ALIEN_THEME="gruvbox"
 
-export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview='
-if [[ -f '{}' ]]; then
-    bat --color always --decorations always --wrap auto {}
-elif [[ -d '{}' ]]; then
-    ls -lAhG
-else
-    ''
-fi
-'"
-
 # Command replacements
 alias python='python3'
 alias pip='pip3'
@@ -53,7 +60,6 @@ alias vim='nvim'
 
 # Quick commands
 alias hmcl='java -jar ~/Minecraft/HMCL.jar'
-alias clear='echo; clear; fastfetch'
 alias bingwp='~/Files/Developer/bingwp/dist/bingwp'
 
 # Default flags
@@ -62,11 +68,19 @@ alias mv='mv -iv'
 alias cp='cp -iv'
 alias dust='dust -r'
 
-if [[ "$TERM_PROGRAM" != "iTerm.app" ]]; then
-    alias fastfetch='fastfetch --logo default'
-fi
+export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview=fzf-preview"
 
 # functions
+function fzf-preview() {
+    if [[ -f '{}' ]]; then
+        bat --color always --decorations always --wrap auto {}
+    elif [[ -d '{}' ]]; then
+        ls -lAhG
+    else
+        ''
+    fi
+}
+
 function cleanbrew() {
     brew cleanup --prune=all
     brew autoremove
@@ -96,5 +110,3 @@ function loop() {
         sleep $2
     done
 }
-
-clear
