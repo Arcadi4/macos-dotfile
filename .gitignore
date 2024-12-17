@@ -19,13 +19,6 @@
 !.config/fastfetch
 !.config/neofetch
 
-# Iterm2 config file
-!Library
-Library/*
-!Library/Preferences
-Library/Preferences/*
-!Library/Preferences/com.googlecode.iterm2.plist
-
 # VSCode config file
 !Library/Application Support
 Library/Application Support/*
