@@ -1,13 +1,11 @@
-# Homebrew setups
+# Homebrew setup
 eval $(/opt/homebrew/bin/brew shellenv)
 
 # fastfetch
 alias fastfetch='fastfetch --processing-timeout 50 --weather-timeout 500'
-
 if [[ "$TERM_PROGRAM" != "iTerm.app" ]]; then
     alias fastfetch='fastfetch --logo default'
 fi
-
 clear
 fastfetch
 
@@ -68,19 +66,17 @@ alias mv='mv -iv'
 alias cp='cp -iv'
 alias dust='dust -r'
 
-export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview=fzf-preview"
-
-# functions
-function fzf-preview() {
+export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview='
     if [[ -f '{}' ]]; then
         bat --color always --decorations always --wrap auto {}
     elif [[ -d '{}' ]]; then
-        ls -lAhG
+        ls -lAhG {}
     else
-        ''
+        echo {}
     fi
-}
+'"
 
+# functions
 function cleanbrew() {
     brew cleanup --prune=all
     brew autoremove
@@ -90,7 +86,9 @@ function fzfx() {
     if [[ -f $1 ]]; then
         eval "cat $1" | fzf
     elif [[ -d $1 ]]; then
-        eval "la $1" | fzf
+        pushd $1
+        eval "ls ." | fzf
+        popd
     else
         eval "$1" | fzf
     fi
