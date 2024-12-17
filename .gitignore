@@ -5,6 +5,7 @@
 
 # ZSH files
 !.zshrc
+!.zprofile
 !.zplug
 .zplug/*
 !.zplug/packages.zsh

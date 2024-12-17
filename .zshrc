@@ -1,4 +1,7 @@
-# alien theme configurations
+# omz plugin
+source $ZSH/oh-my-zsh.sh
+
+# shell prompt: alien
 source ~/alien/alien.zsh
 
 export ALIEN_SECTIONS_LEFT=(
@@ -20,7 +23,6 @@ export ALIEN_GIT_MOD_SYM=*
 
 # applications and quick commands
 alias hmcl='java -jar ~/Minecraft/HMCL.jar'
-alias musicfox='open ~/.Musicfox.terminal'
 alias clear='echo; clear; fastfetch'
 alias bingwp='~/Files/Dev/bingwp/dist/bingwp'
 
@@ -96,7 +98,6 @@ case ":$PATH:" in
 *":$PNPM_HOME:"*) ;;
 *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
 
 # bun completions
 [ -s "/Users/skylar/.bun/_bun" ] && source "/Users/skylar/.bun/_bun"
