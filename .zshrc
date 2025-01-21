@@ -108,3 +108,6 @@ function loop() {
         sleep $2
     done
 }
+
+# For Lucy Development
+alias lucy='~/Files/Developer/lucy/dist/lucy-darwin-arm64-debug'
