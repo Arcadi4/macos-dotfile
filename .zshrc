@@ -110,4 +110,4 @@ function loop() {
 }
 
 # For Lucy Development
-alias lucy='~/Files/Developer/lucy/dist/lucy-darwin-arm64-debug'
+alias lucy='~/Files/Developer/lucy/dist/lucy-darwin-arm64-dev'

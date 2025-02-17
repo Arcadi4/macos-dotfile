@@ -1,208 +1,211 @@
 {
-    "workbench.editorAssociations": {
-        "*.copilotmd": "vscode.markdown.preview.editor",
-        "*.pdf": "pdf.preview",
-        "*.md": "default",
-        "{git,gitlens}:/**/*.{md,csv}": "default",
-        "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default"
-    },
-    "git.autofetch": true,
-    "editor.tabCompletion": "on",
-    "terminal.integrated.enableMultiLinePasteWarning": "never",
-    "hediet.vscode-drawio.resizeImages": null,
-    "window.dialogStyle": "custom",
-    "workbench.editor.empty.hint": "hidden",
-    "launch": {
-        "configurations": []
-    },
-    "editor.fontFamily": "Monaspace Neon",
-    "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'ss07', 'calt', 'liga', 'dlig'",
-    "editor.unicodeHighlight.ambiguousCharacters": true,
-    "editor.fontVariations": true,
-    "editor.codeLensFontFamily": "Monaspace Krypton",
-    "editor.experimentalWhitespaceRendering": "font",
-    "workbench.fontAliasing": "auto",
-    "editor.fontWeight": "normal",
-    "chat.editor.fontFamily": "Monaspace Neon",
-    "debug.console.fontFamily": "Monaspace Argon",
-    "scm.inputFontSize": 12,
-    "terminal.integrated.fontFamily": "Monaspace Neon",
-    "editor.codeActionsOnSave": {},
-    "notebook.output.fontFamily": "Monaspace Radon",
-    "explorer.confirmDelete": false,
-    "grammarly.files.include": [
-        "**/readme.md",
-        "**/README.md",
-        "**/*.txt",
-        "**/*.md"
-    ],
-    "terminal.integrated.env.osx": {
-        "FIG_NEW_SESSION": "1"
-    },
-    "python.defaultInterpreterPath": "/usr/bin/python3",
-    "leetcode.workspaceFolder": "/Users/skylar/.leetcode",
-    "leetcode.defaultLanguage": "cpp",
-    "leetcode.hint.commentDescription": false,
-    "editor.renderWhitespace": "boundary",
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "security.workspace.trust.banner": "always",
-    "security.workspace.trust.untrustedFiles": "open",
-    "diffEditor.codeLens": true,
-    "editor.minimap.autohide": true,
-    "markdown.extension.tableFormatter.delimiterRowNoPadding": true,
-    "javascript.format.semicolons": "insert",
-    "typescript.format.semicolons": "insert",
-    "markdown.extension.toc.levels": "2..6",
-    "explorer.confirmDragAndDrop": false,
-    "markdown.extension.theming.decoration.renderLink": true,
+    "C_Cpp.autoAddFileAssociations": false,
+    "C_Cpp.default.cppStandard": "c++14",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "C_Cpp_Runner.cppStandard": "c++14",
+    "C_Cpp_Runner.useAddressSanitizer": true,
+    "C_Cpp_Runner.useLeakSanitizer": true,
     "[cpp]": {
         "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
-    },
-    "editor.indentSize": "tabSize",
-    "terminal.integrated.smoothScrolling": true,
-    "terminal.integrated.lineHeight": 1.15,
-    "terminal.integrated.fontWeightBold": "700",
-    "terminal.integrated.fontWeight": "300",
-    "markdown-pdf.printBackground": false,
-    "liveServer.settings.donotVerifyTags": true,
-    "markdown.extension.print.includeVscodeStylesheets": false,
-    "css.format.spaceAroundSelectorSeparator": true,
-    "css.format.preserveNewLines": false,
-    "html.format.indentHandlebars": true,
-    "html.format.indentInnerHtml": true,
-    "html.format.wrapLineLength": 0,
-    "html.format.preserveNewLines": false,
-    "git.openRepositoryInParentFolders": "never",
-    "vscode_custom_css.imports": [
-        "file:///Users/skylar/.vscode.css",
-        "file:///Users/skylar/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
-    ],
-    "workbench.startupEditor": "none",
-    "editor.formatOnSave": true,
-    "markdownlint.config": {
-        "MD014": false,
-        "MD033": false,
-        "MD041": false
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "prettier.tabWidth": 4,
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "window.titleBarStyle": "custom",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[latex]": {
+        "editor.formatOnPaste": false,
+        "editor.suggestSelection": "recentlyUsedByPrefix"
+    },
     "[markdown]": {
-        "editor.wordWrap": "bounded",
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+        "editor.wordWrap": "bounded"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "michelemelluso.code-beautifier"
+    },
+    "[shellscript]": {
+        "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "animations.Command-Palette": "Fade",
     "animations.CursorAnimationOptions": {
         "Color": "#F7CE46",
         "TrailLength": 4
     },
-    "editor.cursorSmoothCaretAnimation": "explicit",
-    "workbench.list.smoothScrolling": true,
     "animations.Scrolling": "Fade",
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.smoothScrolling": true,
-    "eslint.run": "onSave",
-    "npm-intellisense.showBuildInLibs": true,
-    "console-ninja.featureSet": "Community",
-    "[vue]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+    "animations.Tabs": "Flip",
+    "c-cpp-compile-run.c-flags": "-Wall -Wextra -g0 -o4",
+    "c-cpp-compile-run.cpp-flags": "-Wall -Wextra -g0 -o4",
+    "chat.editor.fontFamily": "Monaspace Neon",
     "clangd.path": "/usr/bin/clangd",
-    "editor.wordWrap": "bounded",
-    "npm-intellisense.importQuotes": "\"",
-    "path-intellisense.autoSlashAfterDirectory": true,
-    "path-intellisense.showHiddenFiles": true,
+    "cmake.showOptionsMovedNotification": false,
+    "console-ninja.featureSet": "Community",
+    "css.format.preserveNewLines": false,
+    "css.format.spaceAroundSelectorSeparator": true,
+    "debug.console.fontFamily": "Monaspace Argon",
+    "debug.console.wordWrap": false,
+    "deno.enable": true,
+    "diffEditor.codeLens": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.codeActionsOnSave": {},
+    "editor.codeLensFontFamily": "Monaspace Krypton",
+    "editor.cursorSmoothCaretAnimation": "explicit",
+    "editor.experimentalWhitespaceRendering": "font",
+    "editor.foldingImportsByDefault": true,
+    "editor.fontFamily": "Monaspace Neon",
+    "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'ss07', 'calt', 'liga', 'dlig'",
+    "editor.fontVariations": true,
+    "editor.fontWeight": "normal",
+    "editor.formatOnSave": true,
+    "editor.indentSize": "tabSize",
+    "editor.inlayHints.fontFamily": "Monaspace Radon",
     "editor.inlineSuggest.fontFamily": "Monaspace Radon",
+    "editor.minimap.autohide": true,
     "editor.quickSuggestions": {
         "strings": "on"
     },
     "editor.quickSuggestionsDelay": 5,
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "all",
+    "editor.smoothScrolling": true,
     "editor.suggest.matchOnWordStartOnly": false,
     "editor.suggest.showStatusBar": true,
+    "editor.tabCompletion": "on",
+    "editor.unicodeHighlight.ambiguousCharacters": true,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "errorLens.gutterIconsEnabled": true,
+    "errorLens.statusBarIconsEnabled": true,
+    "errorLens.statusBarIconsUseBackground": false,
+    "eslint.run": "onSave",
+    "excalidraw.theme": "auto",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.associations": {
+        "*.bib": "bibtex",
+        "*.zsh": "shellscript"
+    },
     "files.autoGuessEncoding": true,
-    "diffEditor.ignoreTrimWhitespace": true,
-    "animations.Command-Palette": "Fade",
-    "animations.Tabs": "Flip",
+    "git.autofetch": true,
+    "git.openRepositoryInParentFolders": "never",
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
         "markdown": true,
         "scminput": false
     },
-    "excalidraw.theme": "auto",
-    "editor.unicodeHighlight.invisibleCharacters": false,
-    "vue.server.hybridMode": true,
-    "cmake.showOptionsMovedNotification": false,
-    "latex-utilities.countWord.format": "${wordsBody} Words",
-    "redhat.telemetry.enabled": true,
-    "[latex]": {
-        "editor.formatOnPaste": false,
-        "editor.suggestSelection": "recentlyUsedByPrefix"
-    },
-    "latex-workshop.formatting.latex": "latexindent",
-    "latex-workshop.bibtex-format.sort.enabled": true,
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "markdown.extension.print.imgToBase64": true,
-    "C_Cpp.intelliSenseEngine": "disabled",
-    "C_Cpp.default.cppStandard": "c++14",
-    "C_Cpp_Runner.cppStandard": "c++14",
-    "C_Cpp_Runner.useAddressSanitizer": true,
-    "C_Cpp_Runner.useLeakSanitizer": true,
-    "[scss]": {
-        "editor.defaultFormatter": "michelemelluso.code-beautifier"
-    },
-    "latex-workshop.latex.recipe.default": "lastUsed",
-    "markdown-mermaid.lightModeTheme": "neutral",
-    "markdown-mermaid.darkModeTheme": "default",
-    "vscode-office.editorTheme": "Solarized",
-    "gruvboxMaterial.diagnosticTextBackgroundOpacity": "25%",
-    "workbench.preferredDarkColorTheme": "Gruvbox Material Dark",
-    "workbench.colorTheme": "Gruvbox Material Dark",
-    "gruvboxMaterial.lightWorkbench": "high-contrast",
-    "gruvboxMaterial.darkWorkbench": "high-contrast",
-    "workbench.iconTheme": "gruvbox-material-icon-theme",
-    "errorLens.gutterIconsEnabled": true,
-    "errorLens.statusBarIconsEnabled": true,
-    "latex-workshop.view.pdf.invert": 0.8,
-    "latex-workshop.view.pdf.invertMode.grayscale": 0.2,
-    "errorLens.statusBarIconsUseBackground": false,
-    "window.systemColorTheme": "auto",
-    "latex-workshop.view.pdf.invertMode.enabled": "never",
-    "latex-workshop.view.pdf.invertMode.brightness": 1.2,
-    "editor.foldingImportsByDefault": true,
-    "workbench.preferredLightColorTheme": "Gruvbox Material Light",
-    "latex-workshop.view.pdf.color.dark.backgroundColor": "#f0f0f0",
+    "grammarly.files.include": [
+        "**/readme.md",
+        "**/README.md",
+        "**/*.txt",
+        "**/*.md"
+    ],
     "gruvboxMaterial.darkCursor": "aqua",
     "gruvboxMaterial.darkSelection": "aqua",
-    "gruvboxMaterial.lightSelection": "yellow",
+    "gruvboxMaterial.darkWorkbench": "high-contrast",
+    "gruvboxMaterial.diagnosticTextBackgroundOpacity": "25%",
     "gruvboxMaterial.lightCursor": "yellow",
-    "C_Cpp.autoAddFileAssociations": false,
-    "files.associations": {
-        "*.bib": "bibtex",
-        "*.zsh": "shellscript"
-    },
+    "gruvboxMaterial.lightSelection": "yellow",
+    "gruvboxMaterial.lightWorkbench": "high-contrast",
+    "hediet.vscode-drawio.resizeImages": null,
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true,
+    "html.format.preserveNewLines": false,
+    "html.format.wrapLineLength": 0,
+    "javascript.format.semicolons": "insert",
+    "latex-utilities.countWord.format": "${wordsBody} Words",
+    "latex-workshop.bibtex-format.sort.enabled": true,
+    "latex-workshop.formatting.latex": "latexindent",
     "latex-workshop.intellisense.citation.backend": "biblatex",
     "latex-workshop.intellisense.citation.label": "title",
-    "[shellscript]": {
-        "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    "latex-workshop.view.pdf.color.dark.backgroundColor": "#f0f0f0",
+    "latex-workshop.view.pdf.invert": 0.8,
+    "latex-workshop.view.pdf.invertMode.brightness": 1.2,
+    "latex-workshop.view.pdf.invertMode.enabled": "never",
+    "latex-workshop.view.pdf.invertMode.grayscale": 0.2,
+    "launch": {
+        "configurations": []
     },
-    "debug.console.wordWrap": false,
-    "editor.inlayHints.fontFamily": "Monaspace Radon",
-    "c-cpp-compile-run.c-flags": "-Wall -Wextra -g0 -o4",
-    "c-cpp-compile-run.cpp-flags": "-Wall -Wextra -g0 -o4"
+    "leetcode.defaultLanguage": "cpp",
+    "leetcode.hint.commentDescription": false,
+    "leetcode.workspaceFolder": "/Users/skylar/.leetcode",
+    "liveServer.settings.donotVerifyTags": true,
+    "markdown-mermaid.darkModeTheme": "default",
+    "markdown-mermaid.lightModeTheme": "neutral",
+    "markdown-pdf.printBackground": false,
+    "markdown.extension.print.imgToBase64": true,
+    "markdown.extension.print.includeVscodeStylesheets": false,
+    "markdown.extension.tableFormatter.delimiterRowNoPadding": true,
+    "markdown.extension.theming.decoration.renderLink": true,
+    "markdown.extension.toc.levels": "2..6",
+    "markdownlint.config": {
+        "MD014": false,
+        "MD033": false,
+        "MD041": false
+    },
+    "notebook.output.fontFamily": "Monaspace Radon",
+    "npm-intellisense.importQuotes": "\"",
+    "npm-intellisense.showBuildInLibs": true,
+    "path-intellisense.autoSlashAfterDirectory": true,
+    "path-intellisense.showHiddenFiles": true,
+    "prettier.tabWidth": 4,
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "redhat.telemetry.enabled": true,
+    "scm.inputFontSize": 12,
+    "security.workspace.trust.banner": "always",
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    "terminal.integrated.fontFamily": "Monaspace Neon",
+    "terminal.integrated.fontWeight": "300",
+    "terminal.integrated.fontWeightBold": "700",
+    "terminal.integrated.lineHeight": 1.15,
+    "terminal.integrated.smoothScrolling": true,
+    "typescript.format.semicolons": "insert",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "vscode-office.editorTheme": "Solarized",
+    "vscode_custom_css.imports": [
+        "file:///Users/skylar/.vscode.css",
+        "file:///Users/skylar/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
+    ],
+    "vue.server.hybridMode": true,
+    "window.dialogStyle": "custom",
+    "window.systemColorTheme": "auto",
+    "window.titleBarStyle": "custom",
+    "workbench.colorTheme": "Gruvbox Material Dark",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.md": "default",
+        "*.pdf": "pdf.preview",
+        "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default",
+        "{git,gitlens}:/**/*.{md,csv}": "default"
+    },
+    "workbench.fontAliasing": "auto",
+    "workbench.iconTheme": "gruvbox-material-icon-theme",
+    "workbench.list.smoothScrolling": true,
+    "workbench.preferredDarkColorTheme": "Gruvbox Material Dark",
+    "workbench.preferredLightColorTheme": "Gruvbox Material Light",
+    "workbench.startupEditor": "none",
+    "editor.wordWrapColumn": 60,
+    "editor.wordWrap": "bounded"
 }
