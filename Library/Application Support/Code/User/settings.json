@@ -175,10 +175,17 @@
             "editorBracketHighlight.foreground3": "#83a598",
             "editorBracketHighlight.foreground4": "#8ec07c",
             "editorBracketHighlight.foreground5": "#fe8019",
-            "editorBracketHighlight.foreground6": "#d65d0e",
-        }
+            "editorBracketHighlight.foreground6": "#d65d0e"
+        },
+        "statusBar.background": "#171717",
+        "statusBar.noFolderBackground": "#000000",
+        "statusBar.debuggingBackground": "#000000",
+        "statusBar.foreground": "#FFFFFF",
+        "statusBar.debuggingForeground": "#FFFFFF"
     },
     "editor.guides.bracketPairsHorizontal": true,
     "editor.guides.bracketPairs": true,
-    "editor.matchBrackets": "near"
+    "editor.matchBrackets": "near",
+    "statusBarCustomItem.text": "4rcadia",
+    "statusBarCustomItem.icon": "🌙"
 }
