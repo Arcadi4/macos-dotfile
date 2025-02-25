@@ -1,27 +1,6 @@
 {
-    "C_Cpp.autoAddFileAssociations": false,
-    "C_Cpp.default.cppStandard": "c++14",
-    "C_Cpp.intelliSenseEngine": "disabled",
-    "C_Cpp_Runner.cppStandard": "c++14",
-    "C_Cpp_Runner.useAddressSanitizer": true,
-    "C_Cpp_Runner.useLeakSanitizer": true,
     "[cpp]": {
         "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[latex]": {
         "editor.formatOnPaste": false,
@@ -37,19 +16,17 @@
     "[shellscript]": {
         "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
     },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[vue]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "animations.Command-Palette": "Fade",
-    "animations.CursorAnimationOptions": {
-        "Color": "#F7CE46",
-        "TrailLength": 4
-    },
+    "animations.Enabled": true,
+    "animations.Install-Method": "Custom CSS and JS",
     "animations.Scrolling": "Fade",
     "animations.Tabs": "Flip",
+    "C_Cpp_Runner.cppStandard": "c++14",
+    "C_Cpp_Runner.useAddressSanitizer": true,
+    "C_Cpp_Runner.useLeakSanitizer": true,
+    "C_Cpp.autoAddFileAssociations": false,
+    "C_Cpp.default.cppStandard": "c++14",
+    "C_Cpp.intelliSenseEngine": "disabled",
     "c-cpp-compile-run.c-flags": "-Wall -Wextra -g0 -o4",
     "c-cpp-compile-run.cpp-flags": "-Wall -Wextra -g0 -o4",
     "chat.editor.fontFamily": "Monaspace Neon",
@@ -90,6 +67,8 @@
     "editor.tabCompletion": "on",
     "editor.unicodeHighlight.ambiguousCharacters": true,
     "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 80,
     "errorLens.gutterIconsEnabled": true,
     "errorLens.statusBarIconsEnabled": true,
     "errorLens.statusBarIconsUseBackground": false,
@@ -104,20 +83,8 @@
     "files.autoGuessEncoding": true,
     "git.autofetch": true,
     "git.openRepositoryInParentFolders": "never",
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": true,
-        "scminput": false
-    },
-    "grammarly.files.include": [
-        "**/readme.md",
-        "**/README.md",
-        "**/*.txt",
-        "**/*.md"
-    ],
-    "gruvboxMaterial.darkCursor": "aqua",
-    "gruvboxMaterial.darkSelection": "aqua",
+    "gruvboxMaterial.darkCursor": "orange",
+    "gruvboxMaterial.darkSelection": "orange",
     "gruvboxMaterial.darkWorkbench": "high-contrast",
     "gruvboxMaterial.diagnosticTextBackgroundOpacity": "25%",
     "gruvboxMaterial.lightCursor": "yellow",
@@ -182,30 +149,24 @@
     "terminal.integrated.smoothScrolling": true,
     "typescript.format.semicolons": "insert",
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "vscode-office.editorTheme": "Solarized",
     "vscode_custom_css.imports": [
         "file:///Users/skylar/.vscode.css",
-        "file:///Users/skylar/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
+        "file:///Users/skylar/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
     ],
-    "vue.server.hybridMode": true,
+    "vscode-office.editorTheme": "Auto",
     "window.dialogStyle": "custom",
     "window.systemColorTheme": "auto",
     "window.titleBarStyle": "custom",
     "workbench.colorTheme": "Gruvbox Material Dark",
     "workbench.editor.empty.hint": "hidden",
     "workbench.editorAssociations": {
-        "*.copilotmd": "vscode.markdown.preview.editor",
-        "*.md": "default",
-        "*.pdf": "pdf.preview",
         "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default",
-        "{git,gitlens}:/**/*.{md,csv}": "default"
+        "*.copilotmd": "vscode.markdown.preview.editor"
     },
     "workbench.fontAliasing": "auto",
     "workbench.iconTheme": "gruvbox-material-icon-theme",
     "workbench.list.smoothScrolling": true,
     "workbench.preferredDarkColorTheme": "Gruvbox Material Dark",
     "workbench.preferredLightColorTheme": "Gruvbox Material Light",
-    "workbench.startupEditor": "none",
-    "editor.wordWrapColumn": 60,
-    "editor.wordWrap": "bounded"
+    "workbench.startupEditor": "none"
 }
