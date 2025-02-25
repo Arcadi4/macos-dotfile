@@ -40,7 +40,6 @@
     "deno.enable": true,
     "diffEditor.codeLens": true,
     "diffEditor.ignoreTrimWhitespace": true,
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "editor.codeActionsOnSave": {},
     "editor.codeLensFontFamily": "Monaspace Krypton",
     "editor.cursorSmoothCaretAnimation": "explicit",
@@ -157,7 +156,7 @@
     "window.dialogStyle": "custom",
     "window.systemColorTheme": "auto",
     "window.titleBarStyle": "custom",
-    "workbench.colorTheme": "Gruvbox Material Dark",
+    "workbench.colorTheme": "Gruvbox Dark (Medium)",
     "workbench.editor.empty.hint": "hidden",
     "workbench.editorAssociations": {
         "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default",
@@ -166,7 +165,20 @@
     "workbench.fontAliasing": "auto",
     "workbench.iconTheme": "gruvbox-material-icon-theme",
     "workbench.list.smoothScrolling": true,
-    "workbench.preferredDarkColorTheme": "Gruvbox Material Dark",
-    "workbench.preferredLightColorTheme": "Gruvbox Material Light",
-    "workbench.startupEditor": "none"
+    "workbench.preferredDarkColorTheme": "Gruvbox Dark (Medium)",
+    "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
+    "workbench.startupEditor": "none",
+    "workbench.colorCustomizations": {
+        "[Gruvbox Dark (Medium)]": {
+            "editorBracketHighlight.foreground1": "#fabd2f",
+            "editorBracketHighlight.foreground2": "#d3869b",
+            "editorBracketHighlight.foreground3": "#83a598",
+            "editorBracketHighlight.foreground4": "#8ec07c",
+            "editorBracketHighlight.foreground5": "#fe8019",
+            "editorBracketHighlight.foreground6": "#d65d0e",
+        }
+    },
+    "editor.guides.bracketPairsHorizontal": true,
+    "editor.guides.bracketPairs": true,
+    "editor.matchBrackets": "near"
 }
