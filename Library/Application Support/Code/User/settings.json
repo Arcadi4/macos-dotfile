@@ -26,7 +26,6 @@
     "C_Cpp_Runner.useLeakSanitizer": true,
     "C_Cpp.autoAddFileAssociations": false,
     "C_Cpp.default.cppStandard": "c++14",
-    "C_Cpp.intelliSenseEngine": "disabled",
     "c-cpp-compile-run.c-flags": "-Wall -Wextra -g0 -o4",
     "c-cpp-compile-run.cpp-flags": "-Wall -Wextra -g0 -o4",
     "chat.editor.fontFamily": "Monaspace Neon",
@@ -50,9 +49,12 @@
     "editor.fontVariations": true,
     "editor.fontWeight": "normal",
     "editor.formatOnSave": true,
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": true,
     "editor.indentSize": "tabSize",
     "editor.inlayHints.fontFamily": "Monaspace Radon",
     "editor.inlineSuggest.fontFamily": "Monaspace Radon",
+    "editor.matchBrackets": "near",
     "editor.minimap.autohide": true,
     "editor.quickSuggestions": {
         "strings": "on"
@@ -60,6 +62,9 @@
     "editor.quickSuggestionsDelay": 5,
     "editor.renderControlCharacters": false,
     "editor.renderWhitespace": "all",
+    "editor.rulers": [
+        80
+    ],
     "editor.smoothScrolling": true,
     "editor.suggest.matchOnWordStartOnly": false,
     "editor.suggest.showStatusBar": true,
@@ -82,6 +87,10 @@
     "files.autoGuessEncoding": true,
     "git.autofetch": true,
     "git.openRepositoryInParentFolders": "never",
+    "go.formatTool": "gofumpt",
+    "gopls": {
+        "ui.semanticTokens": true
+    },
     "gruvboxMaterial.darkCursor": "orange",
     "gruvboxMaterial.darkSelection": "orange",
     "gruvboxMaterial.darkWorkbench": "high-contrast",
@@ -137,6 +146,8 @@
     "scm.inputFontSize": 12,
     "security.workspace.trust.banner": "always",
     "security.workspace.trust.untrustedFiles": "open",
+    "statusBarCustomItem.icon": "🌙",
+    "statusBarCustomItem.text": "4rcadia",
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.env.osx": {
         "FIG_NEW_SESSION": "1"
@@ -156,6 +167,25 @@
     "window.dialogStyle": "custom",
     "window.systemColorTheme": "auto",
     "window.titleBarStyle": "custom",
+    "workbench.colorCustomizations": {
+        "[Gruvbox Dark (Medium)]": {
+            "editorBracketHighlight.foreground1": "#fabd2f",
+            "editorBracketHighlight.foreground2": "#d3869b",
+            "editorBracketHighlight.foreground3": "#83a598",
+            "editorBracketHighlight.foreground4": "#8ec07c",
+            "editorBracketHighlight.foreground5": "#fe8019",
+            "editorBracketHighlight.foreground6": "#d65d0e"
+        },
+        "statusBar.background": "#181818",
+        "statusBar.debuggingBackground": "#fabd2f",
+        "statusBar.debuggingForeground": "#181818",
+        "statusBar.foreground": "#e0e0e0",
+        "statusBar.noFolderBackground": "#181818",
+        "statusBarItem.remoteBackground": "#83a598",
+        "statusBarItem.remoteForeground": "#181818",
+        "statusBarItem.warningBackground": "#fabd2f",
+        "statusBarItem.warningForeground": "#181818",
+    },
     "workbench.colorTheme": "Gruvbox Dark (Medium)",
     "workbench.editor.empty.hint": "hidden",
     "workbench.editorAssociations": {
@@ -167,25 +197,5 @@
     "workbench.list.smoothScrolling": true,
     "workbench.preferredDarkColorTheme": "Gruvbox Dark (Medium)",
     "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
-    "workbench.startupEditor": "none",
-    "workbench.colorCustomizations": {
-        "[Gruvbox Dark (Medium)]": {
-            "editorBracketHighlight.foreground1": "#fabd2f",
-            "editorBracketHighlight.foreground2": "#d3869b",
-            "editorBracketHighlight.foreground3": "#83a598",
-            "editorBracketHighlight.foreground4": "#8ec07c",
-            "editorBracketHighlight.foreground5": "#fe8019",
-            "editorBracketHighlight.foreground6": "#d65d0e"
-        },
-        "statusBar.background": "#171717",
-        "statusBar.noFolderBackground": "#000000",
-        "statusBar.debuggingBackground": "#000000",
-        "statusBar.foreground": "#FFFFFF",
-        "statusBar.debuggingForeground": "#FFFFFF"
-    },
-    "editor.guides.bracketPairsHorizontal": true,
-    "editor.guides.bracketPairs": true,
-    "editor.matchBrackets": "near",
-    "statusBarCustomItem.text": "4rcadia",
-    "statusBarCustomItem.icon": "🌙"
+    "workbench.startupEditor": "none"
 }

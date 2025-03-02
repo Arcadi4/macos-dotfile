@@ -55,6 +55,7 @@ alias cat='bat'
 alias df='duf'
 alias du='dust'
 alias vim='nvim'
+alias zsh='exec zsh'
 
 # Quick commands
 alias hmcl='java -jar ~/Minecraft/HMCL.jar'
@@ -65,6 +66,7 @@ alias rm='rm -iv'
 alias mv='mv -iv'
 alias cp='cp -iv'
 alias dust='dust -r'
+alias ollama='ollama run --verbose --nowordwrap'
 
 export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview='
     if [[ -f '{}' ]]; then
@@ -75,6 +77,8 @@ export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview='
         echo {}
     fi
 '"
+
+export FZF_DEFAULT_COMMAND="rg --files --hidden --no-ignore"
 
 # functions
 function cleanbrew() {
