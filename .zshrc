@@ -1,20 +1,23 @@
 # Homebrew setup
 eval $(/opt/homebrew/bin/brew shellenv)
 
-# fastfetch
-alias fastfetch='fastfetch --processing-timeout 50 --weather-timeout 500'
-if [[ "$TERM_PROGRAM" != "iTerm.app" ]]; then
-    alias fastfetch='fastfetch --logo default'
-fi
-clear
-fastfetch
-
 # omz plugins
 plugins=(
     git
     zsh-syntax-highlighting
     iterm2 fzf zoxide zsh-interactive-cd zsh-navigation-tools brew github gitignore git-auto-fetch git-commit npm nmap node deno yarn tig mongocli pip pipenv nodenv emoji copyfile copypath ubuntu safe-paste thefuck themes 
     macos tmux ssh ssh-agent colorize colored-man-pages sudo)
+
+# omz setup
+source $ZSH/oh-my-zsh.sh
+clear
+
+# fastfetch
+alias fastfetch='fastfetch --processing-timeout 50 --weather-timeout 500'
+if [[ "$TERM_PROGRAM" != "iTerm.app" ]]; then
+    alias fastfetch='fastfetch --logo default'
+fi
+fastfetch 
 
 # Zoxide setup
 eval "$(zoxide init zsh)"
@@ -24,9 +27,6 @@ eval $(thefuck --alias)
 
 # brew command auto complete, must be done before 'source $ZSH/oh-my-zsh.sh'
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-
-# omz setup
-source $ZSH/oh-my-zsh.sh
 
 # shell prompt: alien
 source ~/alien/alien.zsh

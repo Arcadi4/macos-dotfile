@@ -120,4 +120,12 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # tinytex
-export PATH=$PATH:/Users/skylar/Library/TinyTeX/bin/universal-darwin
+export TEXINPUTS=$TEXINPUTS:/Users/skylar/Library/TinyTeX/bin/universal-darwin:/Users/skylar/Library/TinyTeX/texmf-dist/tex/latex
+export PATH="/Users/skylar/Library/TinyTeX/bin/universal-darwin:$PATH"
+
+# zsh history
+HISTSIZE=999999999
+SAVEHIST=999999999
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+setopt SHARE_HISTORY
