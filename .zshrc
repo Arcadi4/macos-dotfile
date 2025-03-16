@@ -2,11 +2,7 @@
 eval $(/opt/homebrew/bin/brew shellenv)
 
 # omz plugins
-plugins=(
-    git
-    zsh-syntax-highlighting
-    iterm2 fzf zoxide zsh-interactive-cd zsh-navigation-tools brew github gitignore git-auto-fetch git-commit npm nmap node deno yarn tig mongocli pip pipenv nodenv emoji copyfile copypath ubuntu safe-paste thefuck themes 
-    macos tmux ssh ssh-agent colorize colored-man-pages sudo)
+plugins=(rust golang git zsh-syntax-highlighting iterm2 fzf zoxide zsh-interactive-cd zsh-navigation-tools brew github gitignore git-auto-fetch git-commit npm nmap node deno yarn tig mongocli pip pipenv nodenv emoji copyfile copypath ubuntu safe-paste thefuck themes macos tmux ssh ssh-agent colorize colored-man-pages sudo)
 
 # omz setup
 source $ZSH/oh-my-zsh.sh
@@ -60,13 +56,13 @@ alias zsh='exec zsh'
 # Quick commands
 alias hmcl='java -jar ~/Minecraft/HMCL.jar'
 alias bingwp='~/Files/Developer/bingwp/dist/bingwp'
+alias zshrc='code ~/.zshrc'
 
 # Default flags
 alias rm='rm -iv'
 alias mv='mv -iv'
 alias cp='cp -iv'
 alias dust='dust -r'
-alias ollama='ollama run --verbose --nowordwrap'
 
 export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview='
     if [[ -f '{}' ]]; then
@@ -86,16 +82,9 @@ function cleanbrew() {
     brew autoremove
 }
 
-function fzfx() {
-    if [[ -f $1 ]]; then
-        eval "cat $1" | fzf
-    elif [[ -d $1 ]]; then
-        pushd $1
-        eval "ls ." | fzf
-        popd
-    else
-        eval "$1" | fzf
-    fi
+function historyx() {
+    history | fzf | xargs | cut -d ' ' -f 2- | pbcopy 
+    pbpaste
 }
 
 function loop() {
@@ -113,5 +102,7 @@ function loop() {
     done
 }
 
-# For Lucy Development
+# for lucy development
 alias lucy='~/Files/Developer/lucy/dist/lucy-darwin-arm64-dev'
+PROG=lucy
+source /Users/skylar/Files/Developer/lucy/autocomplete/zsh_autocomplete.txt

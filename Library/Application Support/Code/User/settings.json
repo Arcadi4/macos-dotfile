@@ -195,5 +195,14 @@
     "workbench.list.smoothScrolling": true,
     "workbench.preferredDarkColorTheme": "Gruvbox Dark (Medium)",
     "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    },
+    "editor.wrappingStrategy": "advanced",
+    "latex-utilities.countWord.path": "/Users/skylar/Library/TinyTeX/bin/universal-darwin/texcount",
+    "C_Cpp.intelliSenseEngine": "disabled",
 }
