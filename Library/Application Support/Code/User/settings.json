@@ -205,4 +205,6 @@
     "editor.wrappingStrategy": "advanced",
     "latex-utilities.countWord.path": "/Users/skylar/Library/TinyTeX/bin/universal-darwin/texcount",
     "C_Cpp.intelliSenseEngine": "disabled",
+    "window.openFilesInNewWindow": "on",
+    "window.openFoldersInNewWindow": "on",
 }
