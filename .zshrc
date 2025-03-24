@@ -63,6 +63,7 @@ alias rm='rm -iv'
 alias mv='mv -iv'
 alias cp='cp -iv'
 alias dust='dust -r'
+alias markdownlint='markdownlint --disable MD013 --disable MD007'
 
 export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview='
     if [[ -f '{}' ]]; then
