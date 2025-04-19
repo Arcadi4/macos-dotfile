@@ -109,6 +109,9 @@ case ":$PATH:" in
 *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
+# go binaries
+export PATH="/Users/skylar/go/bin:$PATH"
+
 # bun completions
 [ -s "/Users/skylar/.bun/_bun" ] && source "/Users/skylar/.bun/_bun"
 

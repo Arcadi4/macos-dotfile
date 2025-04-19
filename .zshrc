@@ -107,3 +107,5 @@ function loop() {
 alias lucy='~/Files/Developer/lucy/dist/lucy-darwin-arm64-dev'
 PROG=lucy
 source /Users/skylar/Files/Developer/lucy/autocomplete/zsh_autocomplete.txt
+
+PATH=~/.console-ninja/.bin:$PATH

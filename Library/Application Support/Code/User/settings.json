@@ -14,7 +14,7 @@
         "editor.defaultFormatter": "michelemelluso.code-beautifier"
     },
     "[shellscript]": {
-        "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
+        "editor.defaultFormatter": "foxundermoon.shell-format"
     },
     "animations.Command-Palette": "Fade",
     "animations.Enabled": true,
@@ -68,7 +68,7 @@
     "editor.suggest.matchOnWordStartOnly": false,
     "editor.suggest.showStatusBar": true,
     "editor.tabCompletion": "on",
-    "editor.unicodeHighlight.ambiguousCharacters": true,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 80,
@@ -197,14 +197,24 @@
     "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
     "workbench.startupEditor": "none",
     "github.copilot.enable": {
-        "*": false,
+        "*": true,
         "plaintext": false,
         "markdown": true,
-        "scminput": false
+        "scminput": false,
+        "html": false
     },
     "editor.wrappingStrategy": "advanced",
     "latex-utilities.countWord.path": "/Users/skylar/Library/TinyTeX/bin/universal-darwin/texcount",
     "C_Cpp.intelliSenseEngine": "disabled",
     "window.openFilesInNewWindow": "on",
     "window.openFoldersInNewWindow": "on",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.accessibilitySupport": "off",
+    "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+    "lldb.launch.expressions": "native",
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }
