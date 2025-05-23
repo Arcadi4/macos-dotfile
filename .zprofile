@@ -109,6 +109,10 @@ case ":$PATH:" in
 *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
+# python packages
+export PATH="/Users/skylar/Library/Python/3.13/bin:$PATH"
+export PATH="/Users/skylar/Library/Python/3.9/bin:$PATH"
+
 # go binaries
 export PATH="/Users/skylar/go/bin:$PATH"
 

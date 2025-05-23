@@ -208,13 +208,18 @@
     "C_Cpp.intelliSenseEngine": "disabled",
     "window.openFilesInNewWindow": "on",
     "window.openFoldersInNewWindow": "on",
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "editor.accessibilitySupport": "off",
     "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
     "lldb.launch.expressions": "native",
-    "[vue]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "python.analysis.typeCheckingMode": "standard",
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultColorDecorators": "never",
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ],
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off",
+        "editor.defaultFormatter": "ms-python.autopep8",
     },
 }

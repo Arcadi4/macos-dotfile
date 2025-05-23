@@ -13,7 +13,7 @@ alias fastfetch='fastfetch --processing-timeout 50 --weather-timeout 500'
 if [[ "$TERM_PROGRAM" != "iTerm.app" ]]; then
     alias fastfetch='fastfetch --logo default'
 fi
-fastfetch 
+fastfetch
 
 # Zoxide setup
 eval "$(zoxide init zsh)"
@@ -65,7 +65,7 @@ alias cp='cp -iv'
 alias dust='dust -r'
 alias markdownlint='markdownlint --disable MD013 --disable MD007'
 
-export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview='
+FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview='
     if [[ -f '{}' ]]; then
         bat --color always --decorations always --wrap auto {}
     elif [[ -d '{}' ]]; then
@@ -84,7 +84,7 @@ function cleanbrew() {
 }
 
 function historyx() {
-    history | fzf | xargs | cut -d ' ' -f 2- | pbcopy 
+    history | fzf | xargs | cut -d ' ' -f 2- | pbcopy
     pbpaste
 }
 
