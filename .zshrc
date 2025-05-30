@@ -104,8 +104,7 @@ function loop() {
 }
 
 # for lucy development
-alias lucy='~/Files/Developer/lucy/dist/lucy-darwin-arm64-dev'
-PROG=lucy
-source /Users/skylar/Files/Developer/lucy/autocomplete/zsh_autocomplete.txt
+alias lucy-d='~/Files/Developer/lucy/dist/lucy-darwin-arm64-debug'
+alias lucy-r='~/Files/Developer/lucy/release/lucy-darwin-arm64'
 
 PATH=~/.console-ninja/.bin:$PATH
