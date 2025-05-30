@@ -10,6 +10,16 @@
         "editor.defaultFormatter": "yzhang.markdown-all-in-one",
         "editor.wordWrap": "bounded"
     },
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultColorDecorators": "never",
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off",
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ]
+    },
     "[scss]": {
         "editor.defaultFormatter": "michelemelluso.code-beautifier"
     },
@@ -26,6 +36,7 @@
     "C_Cpp_Runner.useLeakSanitizer": true,
     "C_Cpp.autoAddFileAssociations": false,
     "C_Cpp.default.cppStandard": "c++14",
+    "C_Cpp.intelliSenseEngine": "disabled",
     "c-cpp-compile-run.c-flags": "-Wall -Wextra -g0 -o4",
     "c-cpp-compile-run.cpp-flags": "-Wall -Wextra -g0 -o4",
     "chat.editor.fontFamily": "Monaspace Neon",
@@ -39,6 +50,7 @@
     "deno.enable": true,
     "diffEditor.codeLens": true,
     "diffEditor.ignoreTrimWhitespace": true,
+    "editor.accessibilitySupport": "off",
     "editor.codeActionsOnSave": {},
     "editor.codeLensFontFamily": "Monaspace Krypton",
     "editor.cursorSmoothCaretAnimation": "explicit",
@@ -72,6 +84,7 @@
     "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 80,
+    "editor.wrappingStrategy": "advanced",
     "errorLens.gutterIconsEnabled": true,
     "errorLens.statusBarIconsEnabled": true,
     "errorLens.statusBarIconsUseBackground": false,
@@ -79,6 +92,7 @@
     "excalidraw.theme": "auto",
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    "explorer.confirmPasteNative": false,
     "files.associations": {
         "*.bib": "bibtex",
         "*.zsh": "shellscript"
@@ -86,6 +100,13 @@
     "files.autoGuessEncoding": true,
     "git.autofetch": true,
     "git.openRepositoryInParentFolders": "never",
+    "github.copilot.enable": {
+        "*": true,
+        "html": false,
+        "markdown": true,
+        "plaintext": false,
+        "scminput": false
+    },
     "go.formatTool": "gofumpt",
     "gopls": {
         "ui.semanticTokens": true
@@ -103,6 +124,7 @@
     "html.format.preserveNewLines": false,
     "html.format.wrapLineLength": 0,
     "javascript.format.semicolons": "insert",
+    "latex-utilities.countWord.path": "/Users/skylar/Library/TinyTeX/bin/universal-darwin/texcount",
     "latex-workshop.bibtex-format.sort.enabled": true,
     "latex-workshop.formatting.latex": "latexindent",
     "latex-workshop.intellisense.citation.backend": "biblatex",
@@ -120,6 +142,8 @@
     "leetcode.hint.commentDescription": false,
     "leetcode.workspaceFolder": "/Users/skylar/.leetcode",
     "liveServer.settings.donotVerifyTags": true,
+    "lldb.launch.expressions": "native",
+    "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
     "markdown-mermaid.darkModeTheme": "default",
     "markdown-mermaid.lightModeTheme": "neutral",
     "markdown-pdf.printBackground": false,
@@ -139,6 +163,7 @@
     "path-intellisense.autoSlashAfterDirectory": true,
     "path-intellisense.showHiddenFiles": true,
     "prettier.tabWidth": 4,
+    "python.analysis.typeCheckingMode": "standard",
     "python.defaultInterpreterPath": "/usr/bin/python3",
     "redhat.telemetry.enabled": true,
     "scm.inputFontSize": 12,
@@ -163,6 +188,8 @@
     ],
     "vscode-office.editorTheme": "Auto",
     "window.dialogStyle": "custom",
+    "window.openFilesInNewWindow": "on",
+    "window.openFoldersInNewWindow": "on",
     "window.systemColorTheme": "auto",
     "window.titleBarStyle": "custom",
     "workbench.colorCustomizations": {
@@ -195,31 +222,5 @@
     "workbench.list.smoothScrolling": true,
     "workbench.preferredDarkColorTheme": "Gruvbox Dark (Medium)",
     "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
-    "workbench.startupEditor": "none",
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": true,
-        "scminput": false,
-        "html": false
-    },
-    "editor.wrappingStrategy": "advanced",
-    "latex-utilities.countWord.path": "/Users/skylar/Library/TinyTeX/bin/universal-darwin/texcount",
-    "C_Cpp.intelliSenseEngine": "disabled",
-    "window.openFilesInNewWindow": "on",
-    "window.openFoldersInNewWindow": "on",
-    "editor.accessibilitySupport": "off",
-    "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
-    "lldb.launch.expressions": "native",
-    "python.analysis.typeCheckingMode": "standard",
-    "[python]": {
-        "diffEditor.ignoreTrimWhitespace": false,
-        "editor.defaultColorDecorators": "never",
-        "gitlens.codeLens.symbolScopes": [
-            "!Module"
-        ],
-        "editor.formatOnType": true,
-        "editor.wordBasedSuggestions": "off",
-        "editor.defaultFormatter": "ms-python.autopep8",
-    },
+    "workbench.startupEditor": "none"
 }
