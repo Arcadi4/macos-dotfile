@@ -23,9 +23,6 @@
     "[scss]": {
         "editor.defaultFormatter": "michelemelluso.code-beautifier"
     },
-    "[shellscript]": {
-        "editor.defaultFormatter": "foxundermoon.shell-format"
-    },
     "animations.Command-Palette": "Fade",
     "animations.Enabled": true,
     "animations.Install-Method": "Custom CSS and JS",
@@ -66,7 +63,7 @@
     "editor.inlayHints.fontFamily": "Monaspace Radon",
     "editor.inlineSuggest.fontFamily": "Monaspace Radon",
     "editor.matchBrackets": "near",
-    "editor.minimap.autohide": true,
+    "editor.minimap.autohide": "mouseover",
     "editor.quickSuggestions": {
         "strings": "on"
     },
@@ -222,5 +219,24 @@
     "workbench.list.smoothScrolling": true,
     "workbench.preferredDarkColorTheme": "Gruvbox Dark (Medium)",
     "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "go.toolsManagement.autoUpdate": true,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "go.gopath": "/Users/skylar/go",
+    "[toml]": {},
+    "jdk.telemetry.enabled": false,
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "chat.instructionsFilesLocations": {
+        ".github/instructions": true,
+        "/Users/skylar/.aitk/instructions/": true
+    },
+    "[shellscript]": {
+        "editor.defaultFormatter": "lumirelle.shell-format-rev",
+        "files.eol": "\n",
+        "editor.defaultColorDecorators": "never"
+    },
 }
