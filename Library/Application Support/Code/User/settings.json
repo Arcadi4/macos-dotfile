@@ -1,6 +1,6 @@
 {
-    "[cpp]": {
-        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
     },
     "[latex]": {
         "editor.formatOnPaste": false,
@@ -20,14 +20,17 @@
             "!Module"
         ]
     },
-    "[scss]": {
-        "editor.defaultFormatter": "michelemelluso.code-beautifier"
+    "[shellscript]": {
+        "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode",
+        "files.eol": "\n"
     },
+    "[toml]": {},
     "animations.Command-Palette": "Fade",
     "animations.Enabled": true,
     "animations.Install-Method": "Custom CSS and JS",
     "animations.Scrolling": "Fade",
     "animations.Tabs": "Flip",
+    "bashIde.explainshellEndpoint": "https://explainshell.com/",
     "C_Cpp_Runner.cppStandard": "c++14",
     "C_Cpp_Runner.useAddressSanitizer": true,
     "C_Cpp_Runner.useLeakSanitizer": true,
@@ -37,6 +40,10 @@
     "c-cpp-compile-run.c-flags": "-Wall -Wextra -g0 -o4",
     "c-cpp-compile-run.cpp-flags": "-Wall -Wextra -g0 -o4",
     "chat.editor.fontFamily": "Monaspace Neon",
+    "chat.instructionsFilesLocations": {
+        ".github/instructions": true
+    },
+    "chat.viewSessions.orientation": "stacked",
     "clangd.path": "/usr/bin/clangd",
     "cmake.showOptionsMovedNotification": false,
     "console-ninja.featureSet": "Community",
@@ -104,7 +111,12 @@
         "plaintext": false,
         "scminput": false
     },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
     "go.formatTool": "gofumpt",
+    "go.gopath": "/Users/skylar/go",
+    "go.toolsManagement.autoUpdate": true,
     "gopls": {
         "ui.semanticTokens": true
     },
@@ -121,6 +133,7 @@
     "html.format.preserveNewLines": false,
     "html.format.wrapLineLength": 0,
     "javascript.format.semicolons": "insert",
+    "jdk.telemetry.enabled": false,
     "latex-utilities.countWord.path": "/Users/skylar/Library/TinyTeX/bin/universal-darwin/texcount",
     "latex-workshop.bibtex-format.sort.enabled": true,
     "latex-workshop.formatting.latex": "latexindent",
@@ -220,23 +233,5 @@
     "workbench.preferredDarkColorTheme": "Gruvbox Dark (Medium)",
     "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
     "workbench.startupEditor": "none",
-    "github.copilot.nextEditSuggestions.enabled": true,
-    "go.toolsManagement.autoUpdate": true,
-    "gitlens.ai.model": "vscode",
-    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-    "go.gopath": "/Users/skylar/go",
-    "[toml]": {},
-    "jdk.telemetry.enabled": false,
-    "[css]": {
-        "editor.defaultFormatter": "vscode.css-language-features"
-    },
-    "chat.instructionsFilesLocations": {
-        ".github/instructions": true,
-        "/Users/skylar/.aitk/instructions/": true
-    },
-    "[shellscript]": {
-        "editor.defaultFormatter": "lumirelle.shell-format-rev",
-        "files.eol": "\n",
-        "editor.defaultColorDecorators": "never"
-    },
+    "chat.useAgentSkills": true
 }
