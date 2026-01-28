@@ -10,13 +10,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 export ZSH_THEME=""
 
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-export plugins=(rust golang git zsh-syntax-highlighting iterm2 zoxide zsh-interactive-cd zsh-navigation-tools brew github gitignore git-auto-fetch git-commit npm nmap node deno yarn tig mongocli pip pipenv nodenv emoji copyfile copypath safe-paste thefuck themes macos tmux ssh ssh-agent colorize colored-man-pages sudo 1password)
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -72,8 +65,6 @@ export ENABLE_CORRECTION="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# User configuration
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -89,14 +80,6 @@ export ENABLE_CORRECTION="true"
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-
-# omz setup
-source "$ZSH/oh-my-zsh.sh"
-
 # Homebrew setup
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -109,11 +92,15 @@ fastfetch() {
     command fastfetch "${args[@]}" "$@"
 }
 
-# Zoxide setup
+# zoxide setup
 eval "$(zoxide init zsh)"
 
 # thefuck setup
 eval "$(thefuck --alias)"
+
+# omz
+export plugins=(rust golang git zsh-syntax-highlighting iterm2 zoxide zsh-interactive-cd zsh-navigation-tools brew github gitignore git-auto-fetch git-commit npm nmap node deno yarn tig mongocli pip pipenv nodenv emoji copyfile copypath safe-paste thefuck themes macos tmux ssh ssh-agent colorize colored-man-pages sudo 1password)
+source "$ZSH/oh-my-zsh.sh"
 
 # brew command auto complete, must be done before 'source $ZSH/oh-my-zsh.sh'
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"

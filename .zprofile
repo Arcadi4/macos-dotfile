@@ -23,6 +23,9 @@ export PATH="/Users/skylar/Library/Python/3.9/bin:$PATH"
 # go binaries
 export PATH="/Users/skylar/go/bin:$PATH"
 
+# cargo binaries
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # bun completions
 [ -s "/Users/skylar/.bun/_bun" ] && source "/Users/skylar/.bun/_bun"
 

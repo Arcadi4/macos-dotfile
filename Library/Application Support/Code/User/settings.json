@@ -20,9 +20,11 @@
             "!Module"
         ]
     },
+    "[r]": {
+        "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",<>/"
+    },
     "[shellscript]": {
         "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode",
-        "files.eol": "\n"
     },
     "[toml]": {},
     "animations.Command-Palette": "Fade",
@@ -30,6 +32,7 @@
     "animations.Install-Method": "Custom CSS and JS",
     "animations.Scrolling": "Fade",
     "animations.Tabs": "Flip",
+    "azureResourceGroups.enableChatStandIn": false,
     "bashIde.explainshellEndpoint": "https://explainshell.com/",
     "C_Cpp_Runner.cppStandard": "c++14",
     "C_Cpp_Runner.useAddressSanitizer": true,
@@ -39,11 +42,12 @@
     "C_Cpp.intelliSenseEngine": "disabled",
     "c-cpp-compile-run.c-flags": "-Wall -Wextra -g0 -o4",
     "c-cpp-compile-run.cpp-flags": "-Wall -Wextra -g0 -o4",
+    "chat.agent.maxRequests": 50,
     "chat.editor.fontFamily": "Monaspace Neon",
     "chat.instructionsFilesLocations": {
         ".github/instructions": true
     },
-    "chat.viewSessions.orientation": "stacked",
+    "chat.useAgentSkills": true,
     "clangd.path": "/usr/bin/clangd",
     "cmake.showOptionsMovedNotification": false,
     "console-ninja.featureSet": "Community",
@@ -99,7 +103,8 @@
     "explorer.confirmPasteNative": false,
     "files.associations": {
         "*.bib": "bibtex",
-        "*.zsh": "shellscript"
+        "*.zsh": "shellscript",
+        "*.Rmd": "rmd"
     },
     "files.autoGuessEncoding": true,
     "git.autofetch": true,
@@ -173,6 +178,14 @@
     "path-intellisense.autoSlashAfterDirectory": true,
     "path-intellisense.showHiddenFiles": true,
     "prettier.tabWidth": 4,
+    "pylint.args": [
+        "--disable=C0301,C0115,C0114"
+    ],
+    "pylint.importStrategy": "fromEnvironment",
+    "pylint.interpreter": [
+        "./venv/bin/python3",
+        "python3"
+    ],
     "python.analysis.typeCheckingMode": "standard",
     "python.defaultInterpreterPath": "/usr/bin/python3",
     "redhat.telemetry.enabled": true,
@@ -233,5 +246,4 @@
     "workbench.preferredDarkColorTheme": "Gruvbox Dark (Medium)",
     "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
     "workbench.startupEditor": "none",
-    "chat.useAgentSkills": true
 }
