@@ -2,7 +2,6 @@
 */**/DS_Store
 !.gitignore
 !.brew_dump.txt
-!SECURITY.md
 
 # ZSH files
 !.zshrc
