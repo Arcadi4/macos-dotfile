@@ -37,7 +37,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # tinytex
-export TEXINPUTS=$TEXINPUTS:$HOME/Library/TinyTeX/bin/universal-darwin:$HOME/Library/TinyTeX/texmf-dist/tex/latex
+export TEXINPUTS="$TEXINPUTS:$HOME/Library/TinyTeX/bin/universal-darwin:$HOME/Library/TinyTeX/texmf-dist/tex/latex"
 export PATH="$HOME/Library/TinyTeX/bin/universal-darwin:$PATH"
 
 # zsh history

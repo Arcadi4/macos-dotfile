@@ -20,9 +20,9 @@ January 28, 2026
 The following personal information was previously present in the repository but has been **fixed** by replacing hardcoded usernames with environment variables:
 
 #### Username "skylar" (RESOLVED ✅)
-Previously appeared in configuration files with hardcoded paths. **All instances have been replaced with `$HOME` variable.**
+Previously appeared in configuration files with hardcoded paths. **All instances have been replaced with portable path variables.**
 
-**Previously in `.zprofile` (now fixed):**
+**Previously in `.zprofile` (now fixed with `$HOME`):**
 - `/Users/skylar/Library/pnpm` → `$HOME/Library/pnpm`
 - `/Users/skylar/Library/Python/3.13/bin` → `$HOME/Library/Python/3.13/bin`
 - `/Users/skylar/Library/Python/3.9/bin` → `$HOME/Library/Python/3.9/bin`
@@ -30,40 +30,56 @@ Previously appeared in configuration files with hardcoded paths. **All instances
 - `/Users/skylar/.bun/_bun` → `$HOME/.bun/_bun`
 - `/Users/skylar/Library/TinyTeX/bin/universal-darwin` → `$HOME/Library/TinyTeX/bin/universal-darwin`
 
-**Previously in `Library/Application Support/Code/User/settings.json` (now fixed):**
-- `/Users/skylar/go` → `$HOME/go`
-- `/Users/skylar/Library/TinyTeX/bin/universal-darwin/texcount` → `$HOME/Library/TinyTeX/bin/universal-darwin/texcount`
-- `/Users/skylar/.leetcode` → `$HOME/.leetcode`
-- `/Users/skylar/.vscode.css` → `$HOME/.vscode.css`
-- `/Users/skylar/.vscode/extensions/...` → `$HOME/.vscode/extensions/...`
+**Previously in `Library/Application Support/Code/User/settings.json` (now fixed with `~`):**
+- `/Users/skylar/go` → `~/go`
+- `/Users/skylar/Library/TinyTeX/bin/universal-darwin/texcount` → `~/Library/TinyTeX/bin/universal-darwin/texcount`
+- `/Users/skylar/.leetcode` → `~/.leetcode`
+- `file:///Users/skylar/.vscode.css` → `file://~/.vscode.css`
+- `file:///Users/skylar/.vscode/extensions/...` → `file://~/.vscode/extensions/...`
 
 ## Risk Assessment
 
 ### No Remaining Risks ✅
-All hardcoded usernames have been replaced with environment variables (`$HOME`), making the dotfiles:
-1. **More portable** - works for any user without modifications
+All hardcoded usernames have been replaced with portable path variables, making the dotfiles:
+1. **More portable** - works for any user without modifications (shell configs use `$HOME`, VS Code uses `~`)
 2. **More secure** - no personal information exposure
-3. **Best practice compliant** - follows dotfile security guidelines
+3. **Best practice compliant** - follows dotfile security guidelines and tool-specific path conventions
 
 ### Recommendations
 
 While the current state is secure, here are best practices for maintaining dotfile security:
 
 #### 1. Use Environment Variables for User-Specific Paths ✅ IMPLEMENTED
-**This has been implemented!** All hardcoded usernames have been replaced with `$HOME`:
+**This has been implemented!** All hardcoded usernames have been replaced with portable path variables:
 
 ```bash
-# Current implementation (after fix):
+# Shell scripts (.zprofile, .zshrc) - using $HOME:
 export PATH="$HOME/Library/pnpm:$PATH"
 ```
 
-Previous example that was fixed:
+```json
+// VS Code settings.json - using tilde (~):
+{
+  "go.gopath": "~/go",
+  "leetcode.workspaceFolder": "~/.leetcode"
+}
+```
+
+Previous examples that were fixed:
 ```bash
 # Before (hardcoded):
 export PATH="/Users/skylar/Library/pnpm:$PATH"
 
 # After (now using $HOME):
 export PATH="$HOME/Library/pnpm:$PATH"
+```
+
+```json
+// Before (hardcoded):
+{ "go.gopath": "/Users/skylar/go" }
+
+// After (now using tilde):
+{ "go.gopath": "~/go" }
 ```
 
 #### 2. Keep Secrets Out of Dotfiles
@@ -108,11 +124,13 @@ The following files were examined during this audit:
 ✅ **This repository is secure and follows best practices.** 
 
 - No sensitive credentials, API keys, tokens, or private keys were found
-- All hardcoded usernames have been replaced with `$HOME` environment variable
+- All hardcoded usernames have been replaced with portable path variables:
+  - Shell scripts use `$HOME` environment variable
+  - VS Code settings use tilde (`~`) expansion
 - Configuration files are now portable and will work for any user
 - The repository follows dotfile security best practices
 
-The audit identified minor username exposure in configuration paths, which has been **completely resolved** by replacing all hardcoded paths with environment variables. The dotfiles are now more secure, portable, and maintainable.
+The audit identified minor username exposure in configuration paths, which has been **completely resolved** by replacing all hardcoded paths with appropriate portable path variables for each configuration type. The dotfiles are now more secure, portable, and maintainable.
 
 ---
 

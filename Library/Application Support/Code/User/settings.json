@@ -120,7 +120,7 @@
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilot:gpt-4.1",
     "go.formatTool": "gofumpt",
-    "go.gopath": "$HOME/go",
+    "go.gopath": "~/go",
     "go.toolsManagement.autoUpdate": true,
     "gopls": {
         "ui.semanticTokens": true
@@ -139,7 +139,7 @@
     "html.format.wrapLineLength": 0,
     "javascript.format.semicolons": "insert",
     "jdk.telemetry.enabled": false,
-    "latex-utilities.countWord.path": "$HOME/Library/TinyTeX/bin/universal-darwin/texcount",
+    "latex-utilities.countWord.path": "~/Library/TinyTeX/bin/universal-darwin/texcount",
     "latex-workshop.bibtex-format.sort.enabled": true,
     "latex-workshop.formatting.latex": "latexindent",
     "latex-workshop.intellisense.citation.backend": "biblatex",
@@ -155,7 +155,7 @@
     },
     "leetcode.defaultLanguage": "cpp",
     "leetcode.hint.commentDescription": false,
-    "leetcode.workspaceFolder": "$HOME/.leetcode",
+    "leetcode.workspaceFolder": "~/.leetcode",
     "liveServer.settings.donotVerifyTags": true,
     "lldb.launch.expressions": "native",
     "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
@@ -206,8 +206,8 @@
     "typescript.format.semicolons": "insert",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "vscode_custom_css.imports": [
-        "file://$HOME/.vscode.css",
-        "file://$HOME/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+        "file://~/.vscode.css",
+        "file://~/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
     ],
     "vscode-office.editorTheme": "Auto",
     "window.dialogStyle": "custom",
