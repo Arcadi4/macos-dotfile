@@ -161,6 +161,12 @@ export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview='
 '"
 export FZF_DEFAULT_COMMAND="rg --files --hidden --no-ignore"
 function fzf {
+    # Pass through to real fzf unless using custom flags
+    if [[ "$1" != "--search" && "$1" != "--hist" && "$1" != "--exec" ]]; then
+        command fzf "$@"
+        return $?
+    fi
+
     local result
 
     if [[ "$1" == "--search" ]] && [[ -z "$2" ]]; then
@@ -178,10 +184,6 @@ function fzf {
         ;;
     --exec)
         result="$(eval "$2" | command fzf)"
-        ;;
-    *)
-        command fzf
-        return 0
         ;;
     esac
 
