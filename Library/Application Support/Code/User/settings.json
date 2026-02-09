@@ -1,4 +1,7 @@
 {
+    "[aslx]": {
+        "editor.defaultFormatter": "DotJoshJohnson.xml"
+    },
     "[css]": {
         "editor.defaultFormatter": "vscode.css-language-features"
     },
@@ -47,7 +50,9 @@
     "chat.instructionsFilesLocations": {
         ".github/instructions": true
     },
+    "chat.tools.urls.autoApprove": {},
     "chat.useAgentSkills": true,
+    "chat.viewSessions.orientation": "stacked",
     "clangd.path": "/usr/bin/clangd",
     "cmake.showOptionsMovedNotification": false,
     "console-ninja.featureSet": "Community",
@@ -118,7 +123,7 @@
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilot:gpt-4.1",
     "go.formatTool": "gofumpt",
-    "go.gopath": "~/go",
+    "go.inlayHints.ignoredError": true,
     "go.toolsManagement.autoUpdate": true,
     "gopls": {
         "ui.semanticTokens": true
@@ -137,7 +142,6 @@
     "html.format.wrapLineLength": 0,
     "javascript.format.semicolons": "insert",
     "jdk.telemetry.enabled": false,
-    "latex-utilities.countWord.path": "~/Library/TinyTeX/bin/universal-darwin/texcount",
     "latex-workshop.bibtex-format.sort.enabled": true,
     "latex-workshop.formatting.latex": "latexindent",
     "latex-workshop.intellisense.citation.backend": "biblatex",
@@ -188,6 +192,7 @@
     "python.analysis.typeCheckingMode": "standard",
     "python.createEnvironment.trigger": "off",
     "python.defaultInterpreterPath": "/usr/bin/python3",
+    "r.lsp.debug": true,
     "r.lsp.use_stdio": true,
     "r.rmarkdown.knit.openOutputFile": true,
     "redhat.telemetry.enabled": true,
@@ -209,9 +214,10 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "vscode_custom_css.imports": [
         "file://~/.vscode.css",
-        "file://~/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+        "file:///Users/skylar/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
     ],
     "vscode-office.editorTheme": "Auto",
+    "window.autoDetectColorScheme": true,
     "window.dialogStyle": "custom",
     "window.openFilesInNewWindow": "on",
     "window.openFoldersInNewWindow": "on",
@@ -246,7 +252,8 @@
     "workbench.iconTheme": "gruvbox-material-icon-theme",
     "workbench.list.smoothScrolling": true,
     "workbench.preferredDarkColorTheme": "Gruvbox Dark (Medium)",
+    "workbench.preferredHighContrastColorTheme": "Gruvbox Dark (Hard)",
+    "workbench.preferredHighContrastLightColorTheme": "Gruvbox Light (Hard)",
     "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
-    "workbench.startupEditor": "none",
-    "r.lsp.debug": true
+    "workbench.startupEditor": "none"
 }
