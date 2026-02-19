@@ -221,10 +221,6 @@ function loop() {
     watch -n "$interval" "$SHELL" -c "$cmd"
 }
 
-# for lucy development
-alias lucy-d='~/Files/Developer/lucy/dist/lucy-darwin-arm64-debug'
-alias lucy-r='~/Files/Developer/lucy/release/lucy-darwin-arm64'
-
 # console-ninja
 export PATH=~/.console-ninja/.bin:$PATH
 
