@@ -114,10 +114,6 @@
     "git.openRepositoryInParentFolders": "never",
     "github.copilot.enable": {
         "*": true,
-        "html": false,
-        "markdown": true,
-        "plaintext": false,
-        "scminput": false
     },
     "github.copilot.nextEditSuggestions.enabled": true,
     "gitlens.ai.model": "vscode",
@@ -255,5 +251,15 @@
     "workbench.preferredHighContrastColorTheme": "Gruvbox Dark (Hard)",
     "workbench.preferredHighContrastLightColorTheme": "Gruvbox Light (Hard)",
     "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "json.schemaDownload.trustedDomains": {
+        "https://schemastore.azurewebsites.net/": true,
+        "https://raw.githubusercontent.com/": true,
+        "https://www.schemastore.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://json-schema.org/": true,
+        "https://opencode.ai": true,
+        "https://models.dev": true
+    },
+    "http.systemCertificatesNode": true
 }
