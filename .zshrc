@@ -221,6 +221,26 @@ function loop() {
     watch -n "$interval" "$SHELL" -c "$cmd"
 }
 
+# launch opencode with oh-my-opencode plugin
+# `~/.config/opencode/opencode.json` should NOT already contain oh-my-opencode.
+omo() {
+    local config_file="$HOME/.config/opencode/opencode.json"
+    local updated_json
+
+    updated_json=$(jq '
+    .plugin = (
+      (.plugin // [])
+      | if any(.[]; test("^oh-my-opencode(@.*)?$")) then
+          .
+        else
+          . + ["oh-my-opencode"]
+        end
+    )
+  ' "$config_file")
+
+    OPENCODE_CONFIG_CONTENT="$updated_json" opencode "$@"
+}
+
 # console-ninja
 export PATH=~/.console-ninja/.bin:$PATH
 
