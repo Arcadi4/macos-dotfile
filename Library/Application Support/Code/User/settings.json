@@ -70,7 +70,7 @@
     "debug.console.wordWrap": false,
     "deno.enable": true,
     "diffEditor.codeLens": true,
-    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     "editor.accessibilitySupport": "off",
     "editor.codeActionsOnSave": {},
     "editor.codeLensFontFamily": "Monaspace Krypton",
@@ -157,15 +157,23 @@
     "jdk.telemetry.enabled": false,
     "js/ts.updateImportsOnFileMove.enabled": "always",
     "json.schemaDownload.trustedDomains": {
+        "http://json.schemastore.org": true,
         "https://developer.microsoft.com/json-schemas": true,
+        "https://developer.microsoft.com/json-schemas/": true,
         "https://github.com": true,
         "https://json-schema.org": true,
+        "https://json-schema.org/": true,
         "https://json.schemastore.org": true,
+        "https://json.schemastore.org/": true,
         "https://models.dev": true,
         "https://opencode.ai": true,
         "https://raw.githubusercontent.com": true,
+        "https://raw.githubusercontent.com/devcontainers/spec/": true,
+        "https://raw.githubusercontent.com/microsoft/vscode/": true,
         "https://schemastore.azurewebsites.net": true,
-        "https://www.schemastore.org": true
+        "https://schemastore.azurewebsites.net/": true,
+        "https://www.schemastore.org": true,
+        "https://www.schemastore.org/": true
     },
     "latex-workshop.bibtex-format.sort.enabled": true,
     "latex-workshop.formatting.latex": "latexindent",
@@ -286,5 +294,21 @@
         "searchAndCompare": false,
         "launchpad": true
     },
-    "markdown-preview-enhanced.previewTheme": "monokai.css"
+    "markdown-preview-enhanced.previewTheme": "monokai.css",
+    "[skill]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "diffEditor.ignoreTrimWhitespace": true,
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "on",
+            "other": "on"
+        },
+        "editor.wordBasedSuggestions": "off"
+    }
 }

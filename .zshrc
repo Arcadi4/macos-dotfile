@@ -100,6 +100,8 @@ source "$ZSH/oh-my-zsh.sh"
 
 # shell completions
 eval "$(pnpm completion zsh)"
+eval "$(bun completions zsh)"
+eval "$(lucy completions zsh)"
 
 # command helpers
 eval "$(zoxide init zsh)"
@@ -215,8 +217,8 @@ function loop() {
     watch -n "$interval" "$SHELL" -c "$cmd"
 }
 
-# launch opencode with oh-my-opencode plugin
-# `~/.config/opencode/opencode.json` should NOT already contain oh-my-opencode.
+# launch opencode with oh-my-openagent plugin
+# `~/.config/opencode/opencode.json` should NOT already contain oh-my-openagent.
 omo() {
     local config_file="$HOME/.config/opencode/opencode.json"
     local updated_json
@@ -224,10 +226,10 @@ omo() {
     updated_json=$(jq '
     .plugin = (
       (.plugin // [])
-      | if any(.[]; test("^oh-my-opencode(@.*)?$")) then
+      | if any(.[]; test("^oh-my-openagent(@.*)?$")) then
           .
         else
-          . + ["oh-my-opencode"]
+          . + ["oh-my-openagent@latest"]
         end
     )
   ' "$config_file")
@@ -274,3 +276,11 @@ clear
 
 # bun completions
 [ -s "/Users/skylar/.bun/_bun" ] && source "/Users/skylar/.bun/_bun"
+
+# pnpm
+export PNPM_HOME="/Users/skylar/Library/pnpm"
+case ":$PATH:" in
+*":$PNPM_HOME/bin:"*) ;;
+*) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
