@@ -5,8 +5,8 @@
     "[css]": {
         "editor.defaultFormatter": "vscode.css-language-features"
     },
-    "[git-rebase]": {
-        "workbench.editor.restoreViewState": false
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[latex]": {
         "editor.formatOnPaste": false,
@@ -37,7 +37,28 @@
     "[shellscript]": {
         "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
     },
-    "[toml]": {},
+    "[skill]": {
+        "diffEditor.ignoreTrimWhitespace": true,
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+        "editor.insertSpaces": true,
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "other": "on",
+            "strings": "on"
+        },
+        "editor.tabSize": 2,
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "editor.wordBasedSuggestions": "off",
+        "editor.wordWrap": "on"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "animations.Command-Palette": "Fade",
     "animations.Enabled": true,
     "animations.Install-Method": "Custom CSS and JS",
@@ -131,10 +152,26 @@
     },
     "github.copilot.nextEditSuggestions.enabled": true,
     "githubPullRequests.defaultMergeMethod": "rebase",
+    "gitlens.ai.gitkraken.model": "openai:gpt-5-mini",
     "gitlens.ai.model": "gitkraken",
     "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "gitlens.currentLine.pullRequests.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
     "gitlens.rebaseEditor.density": "comfortable",
     "gitlens.rebaseEditor.openOnPausedRebase": "interactive",
+    "gitlens.views.scm.grouped.views": {
+        "branches": true,
+        "commits": true,
+        "contributors": true,
+        "fileHistory": false,
+        "launchpad": true,
+        "remotes": true,
+        "repositories": true,
+        "searchAndCompare": false,
+        "stashes": true,
+        "tags": true,
+        "worktrees": true
+    },
     "go.formatTool": "gofumpt",
     "go.inlayHints.ignoredError": true,
     "go.toolsManagement.autoUpdate": true,
@@ -194,6 +231,7 @@
     "markdown-mermaid.darkModeTheme": "default",
     "markdown-mermaid.lightModeTheme": "neutral",
     "markdown-pdf.printBackground": false,
+    "markdown-preview-enhanced.previewTheme": "monokai.css",
     "markdown.extension.print.imgToBase64": true,
     "markdown.extension.print.includeVscodeStylesheets": false,
     "markdown.extension.theming.decoration.renderLink": true,
@@ -207,7 +245,6 @@
     "npm-intellisense.showBuildInLibs": true,
     "path-intellisense.autoSlashAfterDirectory": true,
     "path-intellisense.showHiddenFiles": true,
-    "prettier.tabWidth": 4,
     "pylint.args": [
         "--disable=C0301,C0115,C0114"
     ],
@@ -234,6 +271,8 @@
     "terminal.integrated.fontWeightBold": "700",
     "terminal.integrated.lineHeight": 1.15,
     "terminal.integrated.smoothScrolling": true,
+    "totalTypeScript.hideAllTips": false,
+    "totalTypeScript.hideBasicTips": false,
     "vscode_custom_css.imports": [
         "file://~/.vscode.css",
         "file:///Users/skylar/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
@@ -277,38 +316,5 @@
     "workbench.preferredHighContrastColorTheme": "Gruvbox Dark (Hard)",
     "workbench.preferredHighContrastLightColorTheme": "Gruvbox Light (Hard)",
     "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
-    "workbench.startupEditor": "none",
-    "gitlens.hovers.currentLine.over": "line",
-    "gitlens.ai.gitkraken.model": "openai:gpt-5-mini",
-    "gitlens.currentLine.pullRequests.enabled": false,
-    "gitlens.views.scm.grouped.views": {
-        "commits": true,
-        "branches": true,
-        "remotes": true,
-        "stashes": true,
-        "tags": true,
-        "worktrees": true,
-        "contributors": true,
-        "fileHistory": false,
-        "repositories": true,
-        "searchAndCompare": false,
-        "launchpad": true
-    },
-    "markdown-preview-enhanced.previewTheme": "monokai.css",
-    "[skill]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
-        "editor.insertSpaces": true,
-        "editor.tabSize": 2,
-        "editor.autoIndent": "advanced",
-        "editor.unicodeHighlight.ambiguousCharacters": false,
-        "editor.unicodeHighlight.invisibleCharacters": false,
-        "diffEditor.ignoreTrimWhitespace": true,
-        "editor.wordWrap": "on",
-        "editor.quickSuggestions": {
-            "comments": "off",
-            "strings": "on",
-            "other": "on"
-        },
-        "editor.wordBasedSuggestions": "off"
-    }
+    "workbench.startupEditor": "none"
 }
