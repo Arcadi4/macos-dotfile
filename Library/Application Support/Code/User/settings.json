@@ -19,7 +19,8 @@
     "[plaintext]": {
         "editor.formatOnSave": false,
         "editor.unicodeHighlight.ambiguousCharacters": false,
-        "editor.unicodeHighlight.invisibleCharacters": false
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[python]": {
         "diffEditor.ignoreTrimWhitespace": false,
@@ -40,7 +41,7 @@
     "[skill]": {
         "diffEditor.ignoreTrimWhitespace": true,
         "editor.autoIndent": "advanced",
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.insertSpaces": true,
         "editor.quickSuggestions": {
             "comments": "off",
@@ -209,6 +210,7 @@
         "https://raw.githubusercontent.com/microsoft/vscode/": true,
         "https://schemastore.azurewebsites.net": true,
         "https://schemastore.azurewebsites.net/": true,
+        "https://turbo.build": true,
         "https://www.schemastore.org": true,
         "https://www.schemastore.org/": true
     },
@@ -316,5 +318,14 @@
     "workbench.preferredHighContrastColorTheme": "Gruvbox Dark (Hard)",
     "workbench.preferredHighContrastLightColorTheme": "Gruvbox Light (Hard)",
     "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "githubPullRequests.pullBranch": "never",
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[csv]": {},
+    "makefile.configureOnOpen": true,
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

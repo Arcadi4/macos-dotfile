@@ -177,9 +177,6 @@ function fzf {
     fi
 }
 
-# rg preferences
-alias rg='rg --hidden --no-ignore'
-
 # only allow installing global npm packages with pnpm, block npm and yarn
 source "$HOME/.block-global-npm.zsh"
 
@@ -199,7 +196,7 @@ function cleanbrew() {
 
 historyx() {
     local cmd
-    cmd="$(fc -l -1000 | command fzf | awk '{$1=""; print $0}' | sed 's/^ *//')"
+    cmd="$(history | command fzf | awk '{$1=""; print $0}' | sed 's/^ *//')"
     if [[ -n "$cmd" ]]; then
         print -z -- "$cmd"
     fi
@@ -240,9 +237,6 @@ omo() {
 # python version
 PATH+="$(brew --prefix python@3.12)/libexec/bin"
 
-# console-ninja
-export PATH=~/.console-ninja/.bin:$PATH
-
 # secrets
 source "$HOME/.env.zsh"
 
@@ -253,6 +247,11 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # icu4c
 export PATH="/opt/homebrew/opt/icu4c@78/bin:$PATH"
 export PATH="/opt/homebrew/opt/icu4c@78/sbin:$PATH"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 
 # dotnet
 export DOTNET_ROOT=/opt/homebrew/Cellar/dotnet/10.0.105/libexec
@@ -284,3 +283,8 @@ case ":$PATH:" in
 *) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 # pnpm end
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/skylar/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
