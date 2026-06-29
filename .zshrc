@@ -101,7 +101,8 @@ source "$ZSH/oh-my-zsh.sh"
 # shell completions
 eval "$(pnpm completion zsh)"
 eval "$(bun completions zsh)"
-eval "$(lucy completions zsh)"
+eval "$(lucy completion zsh)"
+eval "$(opencode completion)"
 
 # command helpers
 eval "$(zoxide init zsh)"
@@ -117,10 +118,12 @@ alias python='python3'
 alias top='htop'
 alias vim='nvim'
 alias zsh='exec zsh'
+alias oc='opencode'
 
 # Quick commands
 alias hmcl='nohup java -jar ~/Minecraft/HMCL.jar &>/dev/null & disown'
 alias zshrc='code ~/.zshrc'
+alias lzg='lazygit'
 
 # Java
 alias gradlew='./gradlew'
@@ -178,7 +181,7 @@ function fzf {
 }
 
 # only allow installing global npm packages with pnpm, block npm and yarn
-source "$HOME/.block-global-npm.zsh"
+# source "$HOME/.block-global-npm.zsh"
 
 # functions
 fastfetch() {
@@ -226,7 +229,7 @@ omo() {
       | if any(.[]; test("^oh-my-openagent(@.*)?$")) then
           .
         else
-          . + ["oh-my-openagent@latest"]
+          . + ["oh-my-openagent"]
         end
     )
   ' "$config_file")
@@ -247,11 +250,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # icu4c
 export PATH="/opt/homebrew/opt/icu4c@78/bin:$PATH"
 export PATH="/opt/homebrew/opt/icu4c@78/sbin:$PATH"
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 
 # dotnet
 export DOTNET_ROOT=/opt/homebrew/Cellar/dotnet/10.0.105/libexec
