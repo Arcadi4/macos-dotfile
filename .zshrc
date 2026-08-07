@@ -121,7 +121,7 @@ alias zsh='exec zsh'
 alias oc='opencode'
 
 # Quick commands
-alias hmcl='nohup java -jar ~/Minecraft/HMCL.jar &>/dev/null & disown'
+alias hmcl='pushd ~; nohup java -jar ~/Minecraft/HMCL.jar &>/dev/null & disown; popd'
 alias zshrc='code ~/.zshrc'
 alias lzg='lazygit'
 
@@ -214,7 +214,7 @@ function loop() {
     local cmd="$1"
     local interval="${2:-1}"
 
-    watch -n "$interval" "$SHELL" -c "$cmd"
+    watch -x -n "$interval" "$SHELL" -c "$cmd"
 }
 
 # launch opencode with oh-my-openagent plugin
@@ -271,9 +271,6 @@ eval "$(starship init zsh)"
 # print logo
 clear
 
-# bun completions
-[ -s "/Users/skylar/.bun/_bun" ] && source "/Users/skylar/.bun/_bun"
-
 # pnpm
 export PNPM_HOME="/Users/skylar/Library/pnpm"
 case ":$PATH:" in
@@ -281,6 +278,7 @@ case ":$PATH:" in
 *) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 # pnpm end
+
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/skylar/.docker/completions $fpath)
 autoload -Uz compinit

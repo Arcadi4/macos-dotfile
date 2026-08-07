@@ -39,3 +39,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # tinytex
 export TEXINPUTS="$TEXINPUTS:$HOME/Library/TinyTeX/bin/universal-darwin:$HOME/Library/TinyTeX/texmf-dist/tex/latex"
 export PATH="$HOME/Library/TinyTeX/bin/universal-darwin:$PATH"
+
+
+# Added by Toolbox App
+export PATH="$PATH:/usr/local/bin"
+
