@@ -1,3 +1,7 @@
+# The following lines were added by Docker Desktop to add commands to your PATH.
+export PATH="$PATH:/Users/skylar/.docker/bin"
+# End of Docker Desktop section.
+
 # Homebrew sources (disabled)
 # export HOMEBREW_NO_INSTALL_FROM_API=1
 # export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"

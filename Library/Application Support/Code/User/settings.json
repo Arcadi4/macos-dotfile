@@ -208,6 +208,7 @@
     "https://json-schema.org/": true,
     "https://json.schemastore.org": true,
     "https://json.schemastore.org/": true,
+    "https://mintlify.com": true,
     "https://models.dev": true,
     "https://opencode.ai": true,
     "https://raw.githubusercontent.com": true,
@@ -397,4 +398,7 @@
     "**/.forgejo/workflows/*.yml",
     "**/.forgejo/workflows/*.yaml",
   ],
+  "[mdx]": {
+    "editor.defaultFormatter": "unifiedjs.vscode-mdx",
+  },
 }
